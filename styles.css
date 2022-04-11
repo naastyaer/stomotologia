@@ -111,25 +111,107 @@ span{
 
 }
 .services_img_backgraound{
-	background-color: #0284C7;
+	background-color: #0EA5E9;
 	max-width: 100%;
 	height: 200px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
+
+
+}
+.services_img_flex{
+	background-color: #02c730;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+
 
 }
 .services_img{
-	max-width: calc(100% / 12 * 3 - var(---offset));
-	/*width: 30px;*/
+	/*width: calc(100% / 12 * 3 - var(---offset));*/
+	width: 300px;
 	background-color: crimson;
+	margin-left: 10px;
+	margin-right: 10px;
+
 	
 }
-/*#services_img_02{
+#services_img_02{
 	background-image: url(img/service-3.png);
-}*/
+	background-size: cover;
+	
+}
+#services_img_03{
+	background-image: url(img/service-2.png);
+	background-size: cover;
+}
+#services_img_04{
+	background-image: url(img/service-1.png);
+	background-size: cover;
+}
 
-/*наши услуги*/
+/*о клнике*/
 
+.about_clinic{
+	background-image: url(img/background-1.png);
+}
+.about_clinic__text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	color: #171717;
+	margin-top:30px;
+	font-weight:  400;
+
+}
+
+.button__about_clinic{
+	width: 18%;
+	height: 28px;
+	border-radius: 5px;
+	background-color: #0EA5E9;
+	font-size: 16px;
+    color: white;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 3%;
+	/*не понимаю как подвинуть кнопку вправо*/
+    cursor: pointer;
+}
+/*отзывы*/
+.reviews{
+	background-color: #fafafa;
+	width: 100%;
+	height: 100%;
+}
+.reviews_img{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.reviwes__text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	color: #737373;
+	font-weight:  400;
+
+}
+.reviews__blok_content{
+	display: flex;
+	flex-direction: row;
+}
+.review__title{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	color:#0284C7;
+	font-weight:  700;
+
+}
 
