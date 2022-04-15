@@ -1,0 +1,206 @@
+* {
+	/* включает внутренние отступы и границы в ширину блока, установленную через свойство width */
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+	/* значение отступа между колонками */
+	--offset: 10px;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/*navigation навигация*/
+
+.background_navigation{
+	background-color: #0284C7;
+}
+.menu__navigation{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	width: 55%;
+}
+.menu_component{
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 20px;  
+	margin-top: 15px;
+	font-size: 22px;
+	font-weight:  600;
+	text-align: center;
+	color: white;
+	
+}
+.row_nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+.logo__navigation{
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	color: white;
+	margin-top: 10px;
+	font-size: 26px;
+	font-weight: Bold;
+}
+.title_block{
+	padding-top: 10%;
+
+	font-size: 30px;
+	color: #0369A1;
+	text-align: center;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
+/*докторы*/
+.background_doctors{
+    background-color: #f5f5f5;
+    padding-bottom: 100px;
+}
+.doctors__text_block{
+    width: calc(100% / 12 * 10 - var(--offset));
+    margin: 0 auto;
+}
+
+.doctors__text{
+    padding-top: 50px;
+	font-size: 20px;
+	color: #737373;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+.doctors__search{
+    background: #E0F2FE;
+    border: 1px solid #BAE6FD;
+    border-radius: 20px;
+    width: calc(100% / 12 * 10 - var(--offset));
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+.search_icon{
+    width: 30px;
+}
+.search_text{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #A3A3A3 ;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 12 * 4 - var(--offset));
+    margin: 0 auto; 
+}
+.doctor_img{
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(115, 115, 115, 0.25);
+    border-radius: 20px;
+}
+.doctors_name{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #404040;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+.doctors_specialization{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #404040;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+
+}
+button{
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #0284C7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #0284C7;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+    padding: 5px 30px ;
+}
+#row2_mar{
+    margin-top: 50px;
+}
+/*футор*/
+footer{
+	background-color: #F0F9FF;
+}
+.footer_text{
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #075985;
+    line-height: 26px;
+}
+.footer_text_bold{
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #075985;
+    line-height: 26px;
+}
+#footer_row2__padding{
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+#footer_row1__padding{
+	padding-top: 50px;
+}
+.footer_icon{
+
+	width: 20px;
+	height: 20px;
+}
+#footer_icon_fb{
+	margin-left: 10px;
+}
+.row__footer{
+	display: flex;
+	flex-direction: row;
+}
+#footer_row3{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+}
+.row_for_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column_footer{
+    display: flex;
+    flex-direction: column;
+}
