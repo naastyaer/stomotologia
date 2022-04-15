@@ -12,6 +12,20 @@ html {
 	max-width: 1000px;
 	margin: 0 auto;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+
+}
+.title_block{
+	padding-top: 4%;
+	padding-bottom: 4%;
+	font-size: 30px;
+	color: #0369A1;
+	text-align: center;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
 /*navigation навигация*/
 .background_navigation{
 	background-color: #0284C7;
@@ -47,15 +61,6 @@ html {
 	margin-top: 10px;
 	font-size: 26px;
 	font-weight: Bold;
-}
-.title_block{
-	padding-top: 4%;
-	padding-bottom: 4%;
-	font-size: 30px;
-	color: #0369A1;
-	text-align: center;
-	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
 }
 /*navigation навигация*/
 header{
@@ -105,20 +110,91 @@ span{
     margin-bottom: 3%;
     cursor: pointer;
 }
+/*лечение кариеса*/
+.background_caries{
+    background-color:  #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.title_block_caries{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 34px;
+    color: #0369A1;
+    text-align: :left;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.caries__block_text{
+    width: calc(100% / 12 * 7 - var(--offset));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.caries__text{
+   
+    font-size: 22px;
+    color: #0369A1;
+    text-align:justify;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.caries__img{
+    width: calc(100% / 12 * 5 - var(--offset));
+    border-radius: 20px;
+
+} 
+.caries_price__calumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caries_price__block_light_blue{
+    background-color: #F0F9FF;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: calc(100% / 12 * 11 - var(--offset));
+    
+}
+.caries_price__block_blue{
+    background-color: #E0F2FE;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: calc(100% / 12 * 11 - var(--offset));
+    
+}
+
+.caries_price__text{
+    font-size: 18px;
+    color: #075985;
+    text-align: left;
+    margin-left: 25px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    Line-height: 27.24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.span_blue{
+    color: #38bdf8;
+}
+.span_green{
+    color: #50b534;
+}
 /*наши услуги*/
 .services_backgraound{
-	background-color: 	#f5f5f5; 
+	background-color:  #f5f5f5; 
+    padding-top: 50px;
 }
 
 .services_img_backgraound{
-	background-color: #0EA5E9;
+	background-color: #0ea5e9;
 	max-width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-start;
-
-
 }
 .services_img_flex{
 	/*background-color: #02c730;*/
@@ -180,143 +256,6 @@ span{
 	font-weight: 500, Medium;
 	font-family:  'Playfair Display';
 }
-
-
-/*о клнике*/
-
-.about_clinic{
-	background-image: url(img/background-1.png);
-	padding-bottom: 50px;
-
-}
-.about_clinic__text{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	text-align: justify;
-	color: #171717;
-	margin-top:30px;
-	font-weight:  400;
-
-}
-
-.button__about_clinic{
-	width: 18%;
-	height: 28px;
-	border-radius: 5px;
-	background-color: #0EA5E9;
-	font-size: 16px;
-    color: white;
-    border: none;
-    margin-top: 5%;
-    margin-bottom: 3%;
-	/*не понимаю как подвинуть кнопку вправо*/
-    cursor: pointer;
-}
-/*отзывы*/
-.reviews{
-	background-color: #fafafa;
-	width: 100%;
-	height: 100%;
-}
-.reviews_img{
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-}
-.reviwes__text{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	text-align: justify;
-	color: #737373;
-	font-weight:  400;
-	
-}
-.reviews__blok_content{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.review__title{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	text-align: justify;
-	color:#0284C7;
-	font-weight:  700;
-}
-.reviews__blok{
-	width: 45%;
-	border: 1px solid  	#E5E5E5;
-	padding: 20px;
-	box-shadow: 0px 1px 10px 1px rgb(0 0 0 / 10%);
-	box-sizing: border-box;
-    border-radius: 20px;
-	margin-bottom: 50px;
-}
-.reviews__blok_content_text{
-	display: flex;
-	flex-direction: column;
-	margin-left: 10px;
-}
-.row{
-	display: flex;
-	flex-direction: row;
-}
-/*адрес*/
-.address{
-	background-image: url(img/map-background.png);
-	padding-bottom: 50px; /*как растянуть прозрачный блок?*/
-}
-.block-opacity {
-	background: linear-gradient(0deg, rgba(240, 249, 255, 0.8), rgba(240, 249, 255, 0.8));
-    width: 100%;
-    
-}
-.address__block{
-	width: 30%;
-	border: 1px solid  	#0284C7;
-	padding: 20px;
-	box-shadow: 0px 1px 10px 1px rgb(0 0 0 / 10%);
-	border-radius: 25px;
-}
-.address__text{
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color: #075985;
-text-align: left;
-line-height: 20px;
-}
-#address__text__telephone{
-	margin-top: 30px;
-}
-.row_address{
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 10px;
-}
-.address__icon{
-	width: 30px;
-	height: 35px;
-	margin-right: 5px;
-}
-.address__icon_circle{
-	width: 30px;
-	height: 30px;
-	margin-right: 5px;
-}
-.address__block__title{	
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 19px;
-color: #075985;
-line-height: 26px;
-}
-.column{
-	display: flex;
-	flex-direction: column;
-}
 /*футор*/
 footer{
 	background-color: #F0F9FF;
@@ -362,3 +301,9 @@ footer{
 	justify-content: flex-end;
 	padding-bottom: 50px;
 }
+
+
+
+
+
+
