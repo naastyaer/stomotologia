@@ -27,12 +27,14 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	margin-left: 20px;  
 	margin-top: 15px;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight:  600;
 	text-align: center;
 	color: white;
-	
+	text-decoration: none;
 }
+a:hover { 
+    color: #ffe; /* Цвет ссылки */ }
 .row {
 	display: flex;
 	flex-wrap: wrap;
