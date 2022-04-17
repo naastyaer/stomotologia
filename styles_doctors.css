@@ -17,7 +17,6 @@ html {
     flex-direction: row;
 }
 /*navigation навигация*/
-
 .background_navigation{
 	background-color: #0284C7;
 }
@@ -26,7 +25,7 @@ html {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	width: 70%;
+
 }
 .menu_component{
 	font-family: 'Open Sans', sans-serif;
@@ -36,9 +35,11 @@ html {
 	font-weight:  600;
 	text-align: center;
 	color: white;
-	
+	text-decoration: none;
 }
-.row_nav {
+a:hover { 
+    color: #ffe; /* Цвет ссылки */ }
+.row_navigation {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -54,13 +55,29 @@ html {
 	font-weight: Bold;
 }
 .title_block{
-	padding-top: 10%;
-
+	padding-top: 4%;
+	padding-bottom: 4%;
 	font-size: 30px;
 	color: #0369A1;
 	text-align: center;
 	font-weight: 700;
 	font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 600px){
+	.menu__navigation{
+		display: flex;
+		flex-direction: column;
+	}
+	.menu_component{
+		font-family: 'Open Sans', sans-serif;
+		margin-right: 20px;  
+		margin-top: 15px;
+		font-size: 28px;
+		font-weight:  600;
+		text-align: right;
+		color: white;
+		text-decoration: none;
+	}
 }
 /*докторы*/
 .background_doctors{
@@ -150,6 +167,17 @@ button{
 #row2_mar{
     margin-top: 50px;
 }
+@media (max-width: 600px){
+	#mobile_column{
+		flex-direction: column;
+	}
+	.column{
+		width: 70%;
+		margin-top: 20px;
+
+	}
+
+}
 /*футор*/
 footer{
 	background-color: #F0F9FF;
@@ -195,12 +223,34 @@ footer{
 	justify-content: flex-end;
 	padding-bottom: 50px;
 }
-.row_for_footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.column_footer{
-    display: flex;
-    flex-direction: column;
+@media (max-width: 600px){
+	.mobile_container{
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.footer_text{
+		text-align: center;
+	}
+	.footer_text_bold{
+		text-align: center;
+
+	}
+	.row__footer{
+		margin-top: 30px;
+		text-align: center;	
+		justify-content: center
+	}
+	.column{
+		align-items: center;		
+	}
+	#footer_row3{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 50px;
+		margin-top: 30px;
+	}
+	.row{
+		flex-direction: column;
+	}
 }
