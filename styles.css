@@ -62,10 +62,12 @@ a:hover {
 	.menu__navigation{
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 	}
 	.menu_component{
 		font-family: 'Open Sans', sans-serif;
-		margin-right: 20px;  
+		margin-right: 20px;
+		margin-left: -10px; 
 		margin-top: 15px;
 		font-size: 28px;
 		font-weight:  600;
@@ -74,9 +76,6 @@ a:hover {
 		text-decoration: none;
 	}
 }
-
-	
-
 /*шапка*/
 header{
 	background-image: url(img/hero.png);
@@ -168,7 +167,18 @@ span{
     height: 100%;
     }
 }
-	/*наши услуги*/
+@media (max-width: 400px){
+	.text_header__title{
+		font-size: 30px;
+		text-align: left;
+		color: rgb(3, 3, 3);
+		font-weight:  Bold;
+		font-family: 'Open Sans', sans-serif;
+		margin-top: 10px;
+	}
+
+}
+/*наши услуги*/
 	.services_backgraound{
 		background-color: 	#f5f5f5; 
 	}
